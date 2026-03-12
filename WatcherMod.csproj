@@ -34,18 +34,12 @@
 		<Content Include="images\**\*.*;scenes\**\*.*;materials\**\*.*;WatcherMod\localization\**\*.json">
 			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
 		</Content>
+		<Content Include="src\Core\**">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Content>
 
 		<!-- Import-Dateien verstecken -->
 		<None Remove="**\*.import" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<Folder Include="images\relics\" />
-		<Folder Include="images\packed\card_portraits\colorless\" />
-		<Folder Include="images\powers\" />
-		<Folder Include="scenes\combat\energy_counters\" />
-		<Folder Include="scenes\creature_visuals\" />
-		<Folder Include="scenes\vfx\" />
 	</ItemGroup>
 
 	<ItemGroup>

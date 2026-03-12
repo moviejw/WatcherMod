@@ -6,15 +6,15 @@ using MegaCrit.Sts2.Core.Unlocks;
 namespace WatcherMod.Patches;
 
 [HarmonyPatch(typeof(Player), nameof(Player.CreateForNewRun), typeof(CharacterModel), typeof(UnlockState),
-	typeof(ulong))]
+    typeof(ulong))]
 public class ExamplePatch
 {
-	private static void Postfix(Player __result)
-	{
-		//var watcherPool = ModelDb.CardPool<WatcherCardPool>();
-		//var latestCards = watcherPool.AllCards.TakeLast(10);
+    private static void Postfix(Player __result)
+    {
+        //var watcherPool = ModelDb.CardPool<WatcherCardPool>();
+        //var latestCards = watcherPool.AllCards.TakeLast(10);
 
 
-		//foreach (var card in latestCards) __result.Deck.AddInternal(card.ToMutable());
-	}
+        //foreach (var card in latestCards) __result.Deck.AddInternal(card.ToMutable());
+    }
 }
