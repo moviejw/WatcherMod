@@ -37,7 +37,7 @@ public sealed class Watcher : CharacterModel
         ModelDb.Card<StrikeWatcher>(),
         ModelDb.Card<StrikeWatcher>(),
         ModelDb.Card<StrikeWatcher>(),
-        ModelDb.Card<StrikeWatcher>(),
+        ModelDb.Card<DefendWatcher>(),
         ModelDb.Card<DefendWatcher>(),
         ModelDb.Card<DefendWatcher>(),
         ModelDb.Card<DefendWatcher>(),

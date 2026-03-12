@@ -11,6 +11,12 @@ public sealed class Beta() : CardModel(2, CardType.Skill, CardRarity.Token, Targ
 {
     public override CardPoolModel Pool => ModelDb.CardPool<TokenCardPool>();
 
+
+    public override HashSet<CardKeyword> CanonicalKeywords =>
+    [
+        CardKeyword.Exhaust
+    ];
+
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
         HoverTipFactory.FromCard<Omega>()

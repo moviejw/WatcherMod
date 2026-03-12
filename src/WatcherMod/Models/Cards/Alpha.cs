@@ -13,6 +13,12 @@ public sealed class Alpha() : CardModel(1, CardType.Skill, CardRarity.Rare, Targ
         HoverTipFactory.FromCard<Beta>()
     ];
 
+    public override HashSet<CardKeyword> CanonicalKeywords =>
+    [
+        CardKeyword.Exhaust
+    ];
+
+
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         // Create Insight card

@@ -5,12 +5,11 @@ using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
-using WatcherMod.Commands;
 using WatcherMod.Models.Stances;
 
 namespace WatcherMod.Models.Cards;
 
-public sealed class Vigilance() : CardModel(2, CardType.Skill, CardRarity.Common, TargetType.Self)
+public sealed class Vigilance() : CardModel(2, CardType.Skill, CardRarity.Basic, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(8m, ValueProp.Move)];
 

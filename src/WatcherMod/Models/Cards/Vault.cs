@@ -10,6 +10,12 @@ public sealed class Vault() : CardModel(3, CardType.Skill, CardRarity.Rare, Targ
 {
     private bool _hasExtraTurn;
 
+
+    public override HashSet<CardKeyword> CanonicalKeywords =>
+    [
+        CardKeyword.Exhaust
+    ];
+
     public override bool ShouldTakeExtraTurn(Player player)
     {
         return _hasExtraTurn && player == Owner;
